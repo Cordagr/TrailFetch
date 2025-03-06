@@ -11,7 +11,7 @@ searchTrailsRouter.get('/searchTrails', async (req, res) => {
     return res.status(400).json({ error: 'Location and radius are required' });
   }
 
-  const apiKey = 'AIzaSyCv3TTKGJirVR5w8ZfM6D582oZwB1tQUVQ';
+  const apiKey = '';
 
   try {
     // Convert location (city or address) to latitude & longitude

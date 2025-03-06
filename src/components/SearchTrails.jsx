@@ -67,7 +67,7 @@ function SearchTrails() {
       <form onSubmit={handleSearch}>
         <label htmlFor="location">Location (City, State, or Address):</label>
         <GooglePlacesAutocomplete
-          apiKey={'AIzaSyCv3TTKGJirVR5w8ZfM6D582oZwB1tQUVQ'}
+          apiKey={''}
           selectProps={{
             location,
             onChange: (value) => setLocation(value),
