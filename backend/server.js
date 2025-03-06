@@ -41,6 +41,10 @@ app.use('/api/auth', loginRouter);
 const searchTrailsRouter = require('./routes/searchTrails');
 app.use('/api/trail', searchTrailsRouter);
 
+const saveTrailRouter = require('./routes/saveTrails');
+app.use('/api/trail', saveTrailRouter);
+
+
 // Start the server and listen on the specified port
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

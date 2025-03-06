@@ -40,6 +40,27 @@ function SearchTrails() {
     }
   };
 
+  const handleSaveTrail = async (trail) => {
+    const token = localStorage.getItem('token'); // Assuming the token is stored in localStorage
+    console.log('Token:', token);
+    try {
+      const response = await axios.post('http://localhost:3000/api/trail/saveTrail', {
+        trailId: trail.place_id
+      }, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+      if (response.data.success) {
+        console.log('Trail saved:', trail.place_id);
+      } else {
+        console.error('Error saving trail:', response.data.message);
+      }
+    } catch (err) {
+      console.error('Error saving trail:', err);
+    }
+  };
+
   return (
     <div className="container mx-auto p-4">
       <h1>Search Nearby Hiking Trails</h1>
@@ -81,6 +102,7 @@ function SearchTrails() {
                 <h3 className="text-lg font-bold">{trail.name}</h3>
                 <p className="text-gray-500 dark:text-gray-400">{trail.vicinity || trail.formatted_address}</p>
                 <p className="text-yellow-500">Rating: {trail.rating || 'N/A'}</p>
+                <button onClick={() => handleSaveTrail(trail)}>Save Trail</button>
               </div>
             </li>
           ))

@@ -6,7 +6,8 @@ const trailSchema = mongoose.Schema({
   difficulty: { type: String, required: true },
   length: { type: Number, required: true }, // Length in miles or kilometers
   description: { type: String },
-  created: { type: Date, default: Date.now }
+  created: { type: Date, default: Date.now },
+  trailId: { type: String, required: true, unique: true },
 });
 
 module.exports = mongoose.model('Trail', trailSchema);
