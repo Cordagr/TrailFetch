@@ -1,1 +1,0 @@
-{"chunk":8,"numChunks":35,"fileHash":"lNlDDjYKf8eh3z8Nraw6APfG6jtIxq3nhkwiGmWQMbg=","filePath":"src/pages/trailPage.jsx","content":"\"use client\"\nexport default function TrailFinder() {\n  return ("}

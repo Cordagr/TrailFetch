@@ -1,1 +1,0 @@
-{"chunk":0,"numChunks":1,"fileHash":"b6zSEdMD2VOMcbZILTBGcaERMHHCVPQqVmaGlNRL7TQ=","filePath":"frontend/components/Home.jsx","content":"import React from 'react';\r\n\r\nfunction Home() {\r\n  return (\r\n    <div>\r\n      <h1>Welcome to the Home Page</h1>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default Home;"}

@@ -1,1 +1,0 @@
-{"chunk":1,"numChunks":6,"fileHash":"Dpbk3qwGmhwzlRgSIsclXf8NSloX2SD/wpT0850v81g=","filePath":"src/components/SearchTrails.jsx","content":"import React, { useState } from 'react';\nfunction SearchTrails() {"}

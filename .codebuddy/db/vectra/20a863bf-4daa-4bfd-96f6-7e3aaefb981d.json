@@ -1,1 +1,0 @@
-{"chunk":0,"numChunks":3,"fileHash":"9amn3Podw58Ewqn9SFIoGXnDYyLBOeXrsRJKZ6UX1nA=","filePath":"src/components/trailDetails.jsx","content":"import React, { useState, useEffect } from 'react';\nimport axios from 'axios';"}
