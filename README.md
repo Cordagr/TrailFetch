@@ -1,1 +1,1 @@
-* To fill *
+Introductory Javascript Project
